@@ -1,0 +1,7 @@
+# Ignore auto-generated or third-party code for language stats
+js/* linguist-vendored
+node_modules/* linguist-vendored
+packages/* linguist-vendored
+bin/* linguist-vendored
+obj/* linguist-vendored
+App_Data/* linguist-vendored
