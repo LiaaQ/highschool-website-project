@@ -1,0 +1,734 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    max-width: 100%;
+    overflow-x:hidden;
+}
+
+.Error {
+    color: black;
+    font-family: Calibri;
+}
+
+#Nahoru {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: black;
+    font-size: 23px;
+    z-index: 30;
+    font-family: merriweather, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px grey;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: mediumpurple;
+}
+
+.textbox
+{
+    padding: 3px;
+    border-radius: 6px;
+    width: 370px;
+}
+
+    .textbox:focus {
+        outline: 2px solid #5c29a0;
+    }
+
+
+.button {
+    border-radius: 10px;
+    border: 2px solid #333;
+    color: white;
+    background-color: black;
+    font-family: merriweather, serif;
+}
+
+    .button:hover {
+        animation-name: btnColor;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
+
+.covers
+{
+    width: 300px;
+    height: 300px;
+}
+
+audio {
+    width: 300px;
+    padding-top: 10px;
+    filter:  sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+}
+
+#video
+{
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    filter: sepia(20%) saturate(100%) contrast(99%);
+}
+
+    #Registrace {
+        position: absolute;
+        right: 190px;
+        top: 10px;
+        font-size: 13px;
+    }
+
+#Prihlaseni, #Odhlaseni {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 12.5px;
+}
+
+#RegistraceDole, #PrihlaseniDole
+{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+@keyframes btnColor
+{
+    100% {
+        border: 2px solid #5c29a0;
+        color: #5c29a0;
+        background-color: #eaeaea;
+    }
+}
+
+.parallax {
+    height: 620px;
+    background-image: url(obr/housle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+    .parallax h1 {
+        text-align: center;
+        color: white;
+        padding-top: 180px;
+        font-size: 55px;
+        text-shadow: 2px 2px 2px #333;
+        font-family: alisha,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 140px;
+    }
+
+nav ul {
+    background-color: #2c2c2c;
+    overflow: hidden;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    -webkit-transition: max-height 0.6s;
+    -moz-transition: max-height 0.6s;
+    -o-transition: max-height 0.6s;
+    transition: max-height 0.6s;
+}
+
+    nav ul li {
+        display: inline-block;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: merriweather, serif;
+    }
+
+        nav ul li:hover {
+            animation-name: navChange;
+            animation-duration: 500ms;
+            animation-fill-mode: forwards;
+        }
+
+@keyframes navChange
+{
+    100% {
+        background-color: #eaeaea;
+        color: #5c29a0;
+    }
+}
+
+.responsive_menu {
+    width: 100%;
+    background-color: #2c2c2c;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: #ffffff;
+    display: none;
+    font-family: merriweather, serif;
+}
+
+.obraz
+{
+    position: relative;
+}
+
+.cara
+{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 20px;
+}
+
+.paragraf {
+    font-size: 20px;
+    font-family: 'merriweather', serif;
+    word-wrap: break-word;
+}
+
+.paraf {
+    font-size: 20px;
+    font-family: 'merriweather', serif;
+    word-wrap: break-word;
+    float: right;
+}
+
+.para {
+    font-size: 20px;
+    font-family: 'merriweather', serif;
+    word-wrap:break-word;
+}
+
+img
+{
+    margin-right: 20px;
+    float: left;
+}
+
+.imgright{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#kira {
+    float: right;
+    max-width: 300px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#imgja{
+    max-width: 400px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#flex{
+    max-width: 600px;
+}
+
+#flstudio{
+    min-height: 650px;
+}
+
+#foto
+{
+    min-height: 1200px;
+}
+
+.celky
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.celky2 {
+    margin-left: 190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pisnecelek
+{
+    height: 400px;
+    width: 400px;
+    padding:20px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#dontseemto {
+    font-family: higumin-rough,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#thenightwemet {
+    font-family: grafolita-script,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#borderline {
+    font-family: los-feliz,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#borntodie {
+    font-family: alkaline,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#madworld {
+    font-family: broadsheet,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#bloodonyourhands {
+    font-family: burnaby-stencil,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#jakzacit
+{
+    min-height:650px;
+}
+
+#uvod
+{
+    min-height: 800px;
+}
+
+#chordify
+{
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.chordifylink:link, .chordifylink:visited {
+    color: #864ed0;
+    text-decoration: none;
+}
+
+.chordifylink:hover
+{
+    color:black;
+}
+
+.content {
+    background-color: #eaeaea;
+    padding: 80px 100px 100px 100px;
+}
+
+    .content p {
+        color: black;
+    }
+
+h2 {
+    color: #5c29a0;
+    padding-bottom: 20px;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px lightgrey;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#lblPrihlasen
+{
+    font-family: merriweather, serif;
+    font-weight: bold;
+    position: relative;
+    left: -800px;
+    font-size: 30px;
+}
+
+.modal-content {
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+body.modal-open {
+    overflow: auto;
+    padding-right: 0 !important;
+}
+
+.modal-header h5 {
+    color: #333;
+    font-family: merriweather, sans;
+}
+
+.modal-header {
+    background-color: #d9d9d9;
+}
+
+.modal-body {
+    background-color: #eaeaea;
+}
+
+.modal-footer {
+    background-color: #d9d9d9;
+}
+
+#txtHeslo
+{
+    position: relative;
+    left: 2px;
+}
+
+.parallax2 {
+    background-image: url(obr/noty.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+}
+
+.parallax3 {
+    background-image: url(obr/Klavír.jpg);
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.parallax4 {
+    background-image: url(obr/housle2.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.parallax5 {
+    background-image: url(obr/kytara.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.buttonModal 
+{
+    font-family: Merriweather, serif;
+    border-radius: 18px;
+    border: 2px solid #333;
+    font-size: 12px;
+    color: white;
+    background-color: black;
+}
+
+.buttonModal:hover {
+    animation-duration: 500ms;
+    animation-name: btnColor;
+    animation-fill-mode: forwards;
+}
+
+#midi {
+    max-width: 700px;
+    float: right;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 90px;
+}
+
+#garageband
+{
+    min-height: 800px;
+}
+
+#main {
+    line-height: 25px;
+    font-size: 14px;
+    padding: 40px;
+    width: 75%;
+}
+
+#KontaktCele
+{
+    margin:auto;
+    width: 605px;
+    color: white;
+    font-family: Calibri;
+    position: relative;
+
+}
+
+#lblInfo 
+{
+    position: absolute;
+    bottom: -47px;
+    left: 190px;
+    color: black;
+}
+
+.nadpisCovers2
+{
+    font-family: merriweather, serif;
+}
+
+.pisnecelek2 {
+    height: 100px;
+    width: 350px;
+    margin-bottom: 20px;
+    color: #5c29a0;
+}
+
+#btnOdeslat {
+    position: relative;
+    left: 80px;
+    top: 50px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+}
+
+#txtJmeno, #txtOdesilatelEmail, #txtZprava {
+    position: absolute;
+    left: 80px;
+    border-radius: 10px;
+    resize: none;
+}
+
+#txtPredmet {
+    position: absolute;
+    left: 335px;
+    border-radius: 10px;
+    resize: none;
+}
+#foot {
+    background-color: #2c1649;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-family: merriweather, serif;
+    font-size: 15px;
+}
+
+#text {
+    padding: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 750px) {
+
+
+    #flex {
+        width: 400px;
+        padding-left: 90px;
+    }
+
+    #midi
+    {
+        padding-left: 90px;
+        width: 400px;
+    }
+
+    #chordify
+    {
+        width: 400px;
+    }
+
+    #imgja
+    {
+        width: 350px;
+    }
+
+    #KontaktCele
+    {
+        margin-left: -80px;
+    }
+
+    .celky2
+    {
+        margin-left: 0 !important;
+    }
+
+}
+
+@media screen and (max-width: 580px)
+{
+    nav ul {
+        max-height: 0px;
+    }
+
+        nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            display: inline-block;
+            padding: 15px;
+            text-align: left;
+        }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .responsive_menu {
+        display: block;
+    }
+
+    .show {
+        max-height: 30em;
+    }
+}
+
+@media screen and (max-width: 520px)
+    {
+    #chordify
+    {
+        width: 300px;
+    }
+
+    #flex
+    {
+        width: 300px;
+        padding-left: 90px;
+    }
+
+    #midi
+    {
+        padding-left: 90px;
+        width: 300px;
+    }
+
+    #imgja
+    {
+        width: 300px;
+        padding-left: -30px;
+    }
+
+    #kira
+    {
+        padding-left: 90px;
+    }
+
+    .pisnecelek{
+        margin-left: 0px !important;
+        margin-top: 0px !important;
+        height: 350px;
+    }
+
+    .nadpisCovers
+    {
+        font-size: 20px !important;
+    }
+
+    .covers
+    {
+        width: 200px;
+        height: 200px;
+    }
+
+    audio
+    {
+        width: 200px;
+    }
+
+    #Nahoru
+    {
+        font-size: 15px;
+    }
+
+}
+
+ @media screen and (max-width: 630px)
+ {
+   #txtJmeno
+   {
+       width: 145px !important;
+   }
+
+   #txtPredmet
+   {
+       width: 145px !important;
+       position: relative;
+       left: 230px;
+   }
+
+   #txtOdesilatelEmail
+   {
+       width: 295px !important;
+   }
+
+   #txtZprava
+   {
+       width: 295px !important;
+   }
+
+
+
+ }
+
+
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
